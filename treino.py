@@ -1,11 +1,11 @@
-nota1 = float(input('Digite a primeira nota :' ))
-nota2 = float(input('Digite a segunda nota :'))
+n1 = float(input('Primeiro número: '))
+n2 = float(input('Segundo número: '))
 
-media = (nota1 + nota2)/2
+op = input('Digite + para somar ou * para multiplicar: ')
 
-if media >=6:
-    print('Sua media foi maior que 6, \033[32m Aprovado \033[m !')
+if op == '+':
+
+    print('o resultado de {:.0f} e {:.0f} será {:.0f}'.format(n1, n2, n1+n2))
 else:
-    print('Sua media foi menor que 6,\033[31m Estude Mais \033[m ')
 
-print('A média do aluno foi {}' .format(media))
+    print('o resultado de {:.0f} e {:.0f} será {:.0f}'.format(n1, n2, n1*n2))
