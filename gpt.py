@@ -1,7 +1,15 @@
-n1 = int(input('Digite um Número: '))
-q = n1 **2
-c = n1 **3
-r = n1 **(1/2)
+#nota = float(input('Digite a nota do aluno :'))
 
-print ('O numero é {} , o quadrado é {} , o cubo é {}, a raiz {:.2f} '.format (n1,q,c,r))
+#if nota >= 7:
+ #   print('\033[32m Aprovado \033[m, parábens !!')
+#else:
+  #  print ('\033[31m Reprovado\033[m , estude mais!!')
 
+
+par = int(input('Digite um número:'))
+numero = par % 2
+
+if numero == 1:
+    print('Impar')
+else:
+    print('Par')
