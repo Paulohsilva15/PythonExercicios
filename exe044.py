@@ -13,18 +13,22 @@ if opção == 1:
     print('Sua compra de R${:.2f} vai custar R${:.2f} com o desconto de 10%'.format(compra,valor))
 elif opção == 2:
     valor = compra - (compra * 5 / 100)
-    print('Sua compra de R${:.2f} no cartão vai custar {:.2f} com desconto de 5%'.format(compra,valor))
+    print('Sua compra de R${:.2f} no cartão vai custar R$ {:.2f} com desconto de 5%'.format(compra,valor))
 elif opção == 3:
     valor = compra / 2
-    print('Sua compra de R${:.2f} em 2x fica {:.2f}'.format(compra,valor))
+    print('Sua compra de R${:.2f} em 2x fica R$ {:.2f}'.format(compra,valor))
 elif opção == 4:
     valor = compra + (compra * 20 / 100)
     parcela = int(input('Quantas parcelas? '))
     total = valor / parcela
 
+
     print(' Sua compra de R${:.2f} ficará {:.2f} com juros de 20% '.format(compra,valor))
     print('A quantidade de parcelas em {}x fica {:.2f}'.format(parcela,total))
 
+else:
 
+    print('Opção de Pagamento inválida!')
+    print('Tente novamente!')
 
 
